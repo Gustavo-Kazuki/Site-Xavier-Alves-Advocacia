@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+import { InternalPage } from "@/components/internal-page";
+import { ContactForm } from "@/components/contact-form";
+export const metadata: Metadata = { title: "Contato", description: "Converse com a equipe Xavier & Alves Advocacia.", alternates: { canonical: "/contato" } };
+export default function Page() { return <InternalPage eyebrow="CONTATO" title={<>VAMOS<br/><em>CONVERSAR?</em></>} intro={<>Conte-nos brevemente sua situação. Nossa equipe irá orientar os próximos passos possíveis.</>}><div className="internal-grid"><article className="internal-card"><h2>Canais de atendimento</h2><p>WhatsApp, telefone, e-mail e endereço serão inseridos após a validação final dos dados do escritório.</p><a className="arrow-link" href="https://wa.me/?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20equipe%20Xavier%20%26%20Alves." data-event="whatsapp_click">INICIAR CONVERSA ↗</a></article><article className="internal-card"><h2>Primeiro contato</h2><ContactForm/></article></div></InternalPage>; }
