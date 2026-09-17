@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = "https://xavier-alves-advocacia.studiovexio.chatgpt.site";
+const siteUrl = "https://site-xavier-alves-advocacia.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
