@@ -17,6 +17,7 @@ export function SiteHeader({ compact = false, dark = false }: { compact?: boolea
     if (!menu.current) return;
     const panels = menu.current.querySelectorAll(".menu-panel");
     const items = menu.current.querySelectorAll(".menu-link");
+    gsap.killTweensOf([menu.current, panels, items]);
     if (open) {
       document.body.classList.add("menu-open");
       gsap.set(menu.current, { autoAlpha: 1, pointerEvents: "auto" });
