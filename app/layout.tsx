@@ -8,8 +8,27 @@ export const metadata: Metadata = {
   title: { default: "Xavier & Alves Advocacia", template: "%s | Xavier & Alves" },
   description: "Advocacia previdenciária e trabalhista com estratégia, proximidade e clareza.",
   alternates: { canonical: "/" },
-  openGraph: { title: "Xavier & Alves Advocacia", description: "Direito com estratégia, proximidade e propósito.", url: siteUrl, siteName: "Xavier & Alves Advocacia", locale: "pt_BR", type: "website" },
-  twitter: { card: "summary", title: "Xavier & Alves Advocacia", description: "Direito com estratégia, proximidade e propósito." },
+  openGraph: {
+    title: "Xavier & Alves Advocacia",
+    description: "Direito com estratégia, proximidade e propósito.",
+    url: siteUrl,
+    siteName: "Xavier & Alves Advocacia",
+    locale: "pt_BR",
+    type: "website",
+    images: [{
+      url: "/og-image.jpg",
+      width: 1200,
+      height: 675,
+      type: "image/jpeg",
+      alt: "Xavier & Alves Advocacia — Dayanne Alves e Dayane Xavier. Direito com estratégia, proximidade e propósito.",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Xavier & Alves Advocacia",
+    description: "Direito com estratégia, proximidade e propósito.",
+    images: ["/og-image.jpg"],
+  },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
